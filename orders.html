@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pathogen Network · Host Orders &amp; Species</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Pathogen Network</h1><div class="sub">Disease · Pathogen · Host order · Species</div><nav class="switch"><a href="index.html">Diseases · Mammals · Studies</a><a href="orders.html" class="on">Pathogens · Host orders</a></nav></header>
+<div class="stats">
+  <div class="chip d"><b id="cP">–</b><span>Pathogens</span></div>
+  <div class="chip m"><b id="cO">–</b><span>Host orders</span></div>
+  <div class="chip r"><b id="cS">–</b><span>Species</span></div>
+</div>
+<div id="crumbs"></div>
+<svg id="net" viewBox="-580 -600 1160 1200" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="glowT" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="#5eead4" flood-opacity=".8"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="hubG"><stop offset="0" stop-color="#6d5dfc"/><stop offset="1" stop-color="#1e2a6b"/></radialGradient>
+  </defs>
+  <g id="layer"></g>
+</svg>
+<div id="info"></div>
+<aside id="panel"><button class="x" aria-label="Close">✕</button><div id="pbody"></div></aside>
+
+<script src="data.js"></script>
+<script src="pathogens.js"></script>
+<script src="orders.js"></script>
+</body>
+</html>

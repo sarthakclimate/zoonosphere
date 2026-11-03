@@ -1,0 +1,56 @@
+// Format  "Pathogen:type;Pathogen:type"  (v=virus, b=bacterium, p=protozoan, h=helminth)
+window.P_DIS = {
+// Source: Mammal_Carrier_Human_Diseases.pdf, "Pathogens" column. Third field "i" = blank in the PDF, inferred.
+"Anthrax":"Bacillus anthracis:b",
+"Argentine hemorrhagic fever":"Junin virus:v",
+"Australian Bat Lyssavirus":"Australian bat lyssavirus:v:i",
+"Balantidiasis":"Balantidium coli:p",
+"Bites":"Pasteurella multocida:b:i;Capnocytophaga canimorsus:b:i",
+"Bolivian hemorrhagic fever":"Machupo virus:v:i",
+"Campylobacteriosis":"Campylobacter:b",
+"Cocoliztli":"Salmonella Paratyphi C:b:i",
+"Cutaneous leishmaniasis":"Leishmania:p",
+"Diarrhea":"Giardia lamblia:p",
+"Dirofilariasis":"Dirofilaria spp.:h",
+"Ebola":"Ebola virus:v",
+"Echinococcosis":"E. granulosus:h;E. multilocularis:h",
+"Ehrlichiosis":"Ehrlichia chaffeensis:b",
+"Giardiasis":"Giardia lamblia:p",
+"Hantavirus pulmonary syndrome":"Hantavirus:v;Sin Nombre virus:v",
+"Hantavirus diseases":"Hantavirus:v;Sin Nombre virus:v",
+"Hemorrhagic fever with renal syndrome":"Hantavirus:v",
+"Hendra virus":"Paramyxoviridae:v",
+"Henipavirus infection":"Henipavirus:v:i",
+"Lassa fever":"Lassa fever virus:v",
+"Leishmaniasis":"Leishmania:p",
+"Leptospirosis":"Leptospira:b",
+"Lyme disease":"Borrelia burgdorferi:b",
+"Marburg hemorrhagic fever":"Marburg virus:v",
+"Monkeypox (mpox)":"Monkeypox virus:v:i",
+"Nephropathia epidemica":"Hantavirus:v",
+"Nipah virus":"Paramyxoviridae:v",
+"Paramyxovirus":"Paramyxoviridae:v:i",
+"Plague":"Yersinia pestis:b",
+"Puumala virus infection":"Puumala orthohantavirus:v",
+"Q fever":"Coxiella burnetii:b",
+"Rabies":"Lyssaviruses:v",
+"Rift Valley fever":"Rift Valley fever virus:v:i",
+"Tick-borne encephalitis":"TBE virus:v:i",
+"Toxocariasis":"Toxocara:h",
+"Toxoplasmosis":"Toxoplasma gondii:p",
+"Trypanosomiasis":"Trypanosoma spp.:p",
+"Tularemia":"Francisella tularensis:b",
+"Venezuelan hemorrhagic fever":"Guanarito virus:v",
+"Yellow fever":"Yellow fever virus:v:i"
+};
+// Host group -> species (pipe separated). Groups follow the legend of your reference image.
+window.P_ORD = {
+// Taxonomic order -> species (pipe separated)
+"Rodentia":"Apodemus agrarius|Apodemus flavicollis|Calomys callosus|Calomys laucha|Calomys musculinus|Castor canadensis|Castor fiber|Cricetomys gambianus|Cynomys ludovicianus|Funisciurus anerythrus|Funisciurus pyrropus|Graphiurus lorraineus|Heliosciurus rufobrachium|Marmota spp.|Mastomys natalensis|Meriones shawi|Microtus spp.|Mus musculus|Myodes glareolus|Nesokia indica|Oligoryzomys delicatus|Oligoryzomys flavescens|Oligoryzomys longicaudatus|Ondatra zibethicus|Peromyscus leucopus|Peromyscus maniculatus|Psammomys obesus|Rattus norvegicus|Rattus rattus|Rhombomys opimus|Rodentia (reservoir candidates)|Sigmodon alstoni|Zygodontomys brevicauda",
+"Chiroptera":"Desmodus rotundus|Epomops franqueti|Glossophaga soricina|Hypsignathus monstrosus|Myonycteris torquata|P. conspicillatus|P. giganteus|P. hypomelanus|P. lylei|P. poliocephalus|P. scapulatus|P. vampyrus|Phyllostomus hastatus|Pteropus alecto|Pteropus hypomelanus|Pteropus spp.|Rousettus aegyptiacus|Saccolaimus flaviventris",
+"Primates":"Alouatta guariba|Alouatta seniculus|Callithrix jacchus|Chlorocebus aethiops|Gorilla gorilla|Pan troglodytes|Sapajus apella",
+"Carnivora":"Canis latrans|Canis lupus familiaris|Felidae spp.|Felis catus|Halichoerus grypus|Mephitis mephitis|Nyctereutes procyonoides|Procyon lotor|Vulpes vulpes|V. lagopus",
+"Artiodactyla":"Antilocapra americana|Bison bison|Bison bonasus|Bos taurus|Camelus dromedarius|Capra hircus|Odocoileus virginianus|Ovis aries|Rangifer tarandus|Sus scrofa|Sus scrofa domesticus",
+"Perissodactyla":"Equus caballus",
+"Lagomorpha":"Lepus europaeus|Lepus timidus|Sylvilagus floridanus"
+};
